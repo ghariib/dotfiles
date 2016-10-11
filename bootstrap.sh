@@ -16,6 +16,7 @@ echo "Creating backup of midnight commander config file"
   mv $mc_conf $olddir/ini_mc_backup
 echo "...done"
 echo "Creating symlink to $mc_conf in mc directory"
+  mkdir -p ~/.config/mc/
   ln -s $dir/ini $mc_conf
 echo "...done"
 
@@ -35,7 +36,7 @@ echo "...done"
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/$file ~/dotfiles_old/
+    mv ~/$file $olddir/$file
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
 done
