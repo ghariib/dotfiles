@@ -30,6 +30,7 @@ alias :q="exit"
 alias tar="tar xvf"
 alias s="sudo"
 alias shutdown="sudo shutdown -h now"
+alias aprest="sudo service apache2 restart"
 
 
 # Common shell functions
