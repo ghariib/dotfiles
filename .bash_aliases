@@ -1,40 +1,101 @@
+# Package management
+alias update="sudo apt-get -qq update && sudo apt-get upgrade"
+alias install="sudo apt-get install"
+alias remove="sudo apt-get remove"
+alias search="apt-cache search"
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-alias c='clear'
+# PS
+alias psa="ps aux"
+alias psg="ps aux | grep "
 
-# git aliases
-alias ga='git add'
-alias gai='git add -interactive'
-alias gA='git add --all'
-alias gbl="git branch --list --verbose"
-alias gcb="git checkout -B"
-alias gca='git commit --amend'
-alias gcl="git clone --progress"
-alias gco="git checkout"
-alias gcm="git checkout master"
-alias gct='git commit'
-alias gd="git diff"
-alias gitundocommit="git reset --soft 'HEAD^'"
-alias gitundopush="git push -f origin 'HEAD^:master'"
-alias glo="git log --decorate --oneline --graph"
-alias glg="git log --decorate --graph --abbrev-commit --date=relative"
-alias gmg='git merge --no-ff'
-alias gph="git push"
-alias gpr="git pull"
-alias gpom="git push origin master"
-alias grao="git remote add origin"
-alias grau="git remote add upstream"
-alias grv="git remote -v"
-alias gs="git status --short --branch"
-alias gss='git stash save'
-alias gsa='git stash apply'
-alias gsl='git stash list'
-alias gsp='git stash pop'
-alias gsc='git stash clear'
-alias gsd='git stash drop'
+# Show human friendly numbers and colors
+alias df="df -h"
+alias du="du -h -d 2"
+#alias fs="stat -f "%z bytes""
+
+alias ll="ls -alh --color=auto"
+alias ls="ls --color=auto"
+
+# misc
+alias :q="exit"
+alias tar="tar xvf"
+
+
+# Common shell functions
+alias less="less -r"
+alias tf="tail -f"
+alias l="less"
+alias lh="ls -alt | head" # see the last modified files
+alias screen="TERM=screen screen"
+alias cl="clear"
+
+alias k9="kill -9"
+
+# Git Aliases
+alias gs="git status"
+# alias gstsh="git stash"
+# alias gst="git stash"
+# alias gsp="git stash pop"
+# alias gsa="git stash apply"
+# alias gsh="git show"
+# alias gshw="git show"
+# alias gshow="git show"
+# alias gi="vim .gitignore"
+# alias gcm="git ci -m"
+# alias gcim="git ci -m"
+# alias gci="git ci"
+# alias gco="git co"
+# alias gcp="git cp"
+# alias ga="git add -A"
+# alias gap="git add -p"
+# alias guns="git unstage"
+# alias gunc="git uncommit"
+# alias gm="git merge"
+# alias gms="git merge --squash"
+# alias gam="git amend --reset-author"
+# alias grv="git remote -v"
+# alias grr="git remote rm"
+# alias grad="git remote add"
+# alias gr="git rebase"
+# alias gra="git rebase --abort"
+# alias ggrc="git rebase --continue"
+# alias gbi="git rebase --interactive"
+# alias gl="git l"
+# alias glg="git l"
+# alias glog="git l"
+# alias co="git co"
+# alias gf="git fetch"
+# alias gfp="git fetch --prune"
+# alias gfa="git fetch --all"
+# alias gfap="git fetch --all --prune"
+# alias gfch="git fetch"
+# alias gd="git diff"
+# alias gb="git b"
+# # Staged and cached are the same thing
+# alias gdc="git diff --cached -w"
+# alias gds="git diff --staged -w"
+# alias gpub="grb publish"
+# alias gtr="grb track"
+# alias gpl="git pull"
+# alias gplr="git pull --rebase"
+# alias gps="git push"
+# alias gpsh="git push -u origin `git rev-parse --abbrev-ref HEAD`"
+# alias gnb="git nb" # new branch aka checkout -b
+# alias grs="git reset"
+# alias grsh="git reset --hard"
+# alias gcln="git clean"
+# alias gclndf="git clean -df"
+# alias gclndfx="git clean -dfx"
+# alias gsm="git submodule"
+# alias gsmi="git submodule init"
+# alias gsmu="git submodule update"
+# alias gt="git t"
+# alias gbg="git bisect good"
+# #alias gbb="git bisect bad"
