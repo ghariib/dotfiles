@@ -40,6 +40,7 @@ alias k9="kill -9"
 
 # Git Aliases
 alias gs="git status"
+alias gpom="git push origin master"
 # alias gstsh="git stash"
 # alias gst="git stash"
 # alias gsp="git stash pop"
