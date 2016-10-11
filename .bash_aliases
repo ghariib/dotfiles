@@ -28,6 +28,8 @@ alias ls="ls --color=auto"
 # misc
 alias :q="exit"
 alias tar="tar xvf"
+alias s="sudo"
+alias shutdown="sudo shutdown -h now"
 
 
 # Common shell functions
