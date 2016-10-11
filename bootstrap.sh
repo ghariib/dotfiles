@@ -42,4 +42,6 @@ for file in $files; do
 done
 
 source ~/.bashrc
+  echo "bashrc sourced"
 source ~/.bash_aliases
+  echo "bash_aliases sourced"
