@@ -41,3 +41,4 @@ for file in $files; do
 done
 
 source ~/.bashrc
+source ~/.bash_aliases
