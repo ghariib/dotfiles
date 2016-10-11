@@ -10,6 +10,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"
+alias cdw="cd /var/www/html"
+alias cdap="cd /etc/apache2"
 
 # PS
 alias psa="ps aux"
